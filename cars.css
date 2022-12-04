@@ -1,0 +1,65 @@
+body{
+  background-color: rgb(64, 241, 123);
+}
+#highway
+{
+  height: 700%;
+  width: 300px;
+  display:block;
+  background-image: url(highway.jpg);
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-y;
+  animation: highway 0s linear infinite;
+}
+@keyframes highway
+{
+100%{
+  transform: translateY(3400px);
+}
+}
+.car
+{
+  width: 60px;
+  left: 15%;
+  top:60%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+  animation-delay: 0s;
+}
+
+@keyframes movright {
+  from {left:15% ;}
+  to {right:  30%;}
+}
+@keyframes movleft {
+  from {left: 30%;}
+  to {right:15% ;}
+}
+.car img
+{
+  width:100%;
+}
+
+#btnnkm
+{
+  margin-left: 400px;
+}
+.opponentcar
+{
+  width: 60px;
+  left: 15%;
+  bottom:100%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 3;
+  animation-delay: 0s;
+}
+@keyframes opponent {
+  from {bottom: 100%;}
+  to {bottom:-15% ;}
+}
